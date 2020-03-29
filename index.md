@@ -11,7 +11,7 @@
        	<script> 
        		const fs = require('fs') 
   
-			fs.readFile('Input.txt', (err, data) => { 
+			fs.readFile('count.txt', (err, data) => { 
     			if (err) throw err; 
   
    				console.log(data.toString()); 
