@@ -16,7 +16,7 @@
   
    // 				console.log(data.toString()); 
 			// }) 
-			counter(){
+			function counter(){
 				console.log("hello?");
 			};  
 			window.onload = counter;
