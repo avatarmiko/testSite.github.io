@@ -2,6 +2,7 @@
 	<head>
 		<title> Title! </title>
 	</head>
+	<script> src="require.js" </script>
 	<body>
 		<p> hellooo </p>
 		<div id="cntr"> 
@@ -9,13 +10,7 @@
             <span>0</span>
         </div>
        	<script> 
-   //     		const fs = require('fs') 
-  
-			// fs.readFile('count.txt', (err, data) => { 
-   //  			if (err) throw err; 
-  
-   // 				console.log(data.toString()); 
-			// }) 
+
 			function counter(){
 				console.log("hello?");
 				var fs = require("fs");
