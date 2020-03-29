@@ -18,6 +18,9 @@
 			// }) 
 			function counter(){
 				console.log("hello?");
+				var fs = require("fs");
+				var text = fs.readFileSync("./counter.txt");
+				console.log(text);
 			};  
 			window.onload = counter;
 		</script>	
