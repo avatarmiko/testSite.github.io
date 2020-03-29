@@ -9,13 +9,17 @@
             <span>0</span>
         </div>
        	<script> 
-			function counter_fn(){
-				var counterElement = document.getElementById("cntr")
-			    var counterNumber = parseInt(counterElement.innerHTML)
-			    counterNumber = counterNumber + 1
-			    counterElement.innerHTML = counterNumber
-			}
-			window.onload = counter_fn;  
+       		const fs = require('fs') 
+  
+			fs.readFile('Input.txt', (err, data) => { 
+    			if (err) throw err; 
+  
+   				console.log(data.toString()); 
+			}) 
+			
+			// window.onload = counter(){
+
+			// };  
 		</script>	
 		<p> bruh is this shit updating? </p>
 	</body>
