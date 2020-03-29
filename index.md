@@ -9,15 +9,14 @@
             <span>0</span>
         </div>
        	<script> 
-            function counter_fn(){
-                var counter = $('#cntr span').text(); // geting value from span
-                var count = 0;
-                count = parseInt(counter.value);
-                count = count+1;
-            	counter.innerHTML = parseInt(count);
-           	}
-           	window.onload = counter_fn;  
-      	</script>
-	<p> is this shit updating? </p>
+			function counter_fn(){
+				var counterElement = document.getElementById("cntr")
+			    var counterNumber = parseInt(counterElement.innerHTML)
+			    counterNumber = counterNumber + 1
+			    counterElement.innerHTML = counterNumber
+			}
+			window.onload = counter_fn;  
+		</script>	
+		<p> bruh is this shit updating? </p>
 	</body>
 </html>
