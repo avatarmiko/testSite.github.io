@@ -16,10 +16,10 @@
   
    // 				console.log(data.toString()); 
 			// }) 
-			
-			window.onload = counter(){
+			counter(){
 				console.log("hello?");
 			};  
+			window.onload = counter;
 		</script>	
 		<p> bruh is this shit updating? </p>
 	</body>
