@@ -4,27 +4,20 @@
 	</head>
 	<body>
 		<p> hellooo </p>
-		<script>
-			/*
-			Counter script
-			By JavaScript Kit (http://javascriptkit.com)
-			Over 400+ free scripts here!
-			Above notice MUST stay entact for use
-			*/
-
-			function fakecounter(){
-
-			//decrease/increase counter value (depending on perceived popularity of your site!)
-			var decrease_increase=50000
-
-			var counterdate=new Date()
-			var currenthits=counterdate.getTime().toString()
-			currenthits=parseInt(currenthits.substring(2,currenthits.length-4))+decrease_increase
-
-			document.write("You are visitor # <b>"+currenthits+"</b> to my site!")
-			}
-			fakecounter()
-		</script>
+		<div id="cntr"> 
+            The number of visitors is : 
+            <span>0</span>
+        </div>
+       	<script> 
+            function counter_fn(){
+                var counter = $('#cntr span').text(); // geting value from span
+                var count = 0;
+                count = parseInt(counter.value);
+                count = count+1;
+            	counter.innerHTML = parseInt(count);
+           	}
+           	window.onload = counter_fn;  
+      	</script>
 	<p> is this shit updating? </p>
 	</body>
 </html>
