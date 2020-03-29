@@ -25,5 +25,6 @@
 			}
 			fakecounter()
 		</script>
+	<p> is this shit updating? </p>
 	</body>
 </html>
